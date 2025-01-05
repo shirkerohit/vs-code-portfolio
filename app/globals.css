@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vscode-bg: #1e1e1e;
+  --vscode-sidebar-bg: #252526;
+  --vscode-titlebar-bg: #3c3c3c;
+  --vscode-text: #cccccc;
+  --vscode-border: #474747;
+}
+
+body {
+  color: var(--vscode-text);
+  background: var(--vscode-bg);
+}
+
+.vscode-titlebar {
+  background: var(--vscode-titlebar-bg);
+  -webkit-app-region: drag;
+}
+
+.vscode-titlebar button {
+  -webkit-app-region: no-drag;
+}
+
+.vscode-sidebar {
+  background: var(--vscode-sidebar-bg);
+}
+
+.shortcut-key {
+  background: rgba(128, 128, 128, 0.17);
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 3px;
+  padding: 0 6px;
+  font-size: 11px;
+}
+
+.window-controls button {
+  width: 45px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window-controls button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.window-controls button.close:hover {
+  background: #c42b1c;
+}
+
